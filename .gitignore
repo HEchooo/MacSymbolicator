@@ -12,6 +12,13 @@ build/
 DerivedData/
 *.mobileprovision
 
+## Ignore when build
+.DS_Store
+.idea
+
+Pods/
+Podfile.lock
+
 ## Various settings
 *.pbxuser
 !default.pbxuser

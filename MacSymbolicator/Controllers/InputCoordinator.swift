@@ -11,9 +11,9 @@ protocol InputCoordinatorDelegate: AnyObject {
 
 class InputCoordinator {
     let reportFileDropZone = DropZone(
-        fileTypes: [".crash", ".ips", ".txt"],
+        fileTypes: [".crash", ".ips", ".txt", ".json"],
         allowsMultipleFiles: false,
-        text: "Drop Report File\n(crash, sample, or spindump)",
+        text: "Drop Report File\n(crash, sample, json, or spindump)",
         activatesAppAfterDrop: true
     )
 

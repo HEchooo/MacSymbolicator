@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DF9D674489D89227C5AB046 /* Pods_MacSymbolicatorCLI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D24CB3B6E2C454995407E5 /* Pods_MacSymbolicatorCLI.framework */; };
+		6887232C842EA137ACFE671D /* Pods_MacSymbolicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B8C59987DE3010EED7A0A6 /* Pods_MacSymbolicator.framework */; };
+		8517C966B86624F81D69640D /* Pods_MacSymbolicatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61181E3C145A5C291C79EEF3 /* Pods_MacSymbolicatorTests.framework */; };
 		B200A3AA1EF23244006CD542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B200A3AC1EF23244006CD542 /* Main.storyboard */; };
 		B2036AD128DDDFBB00ED1268 /* ReportFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2036AD028DDDFBB00ED1268 /* ReportFileTests.swift */; };
 		B2036AD328DDE4A500ED1268 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2036AD228DDE4A500ED1268 /* TestFile.swift */; };
@@ -101,6 +104,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		068754886D84578B36D0A0D3 /* Pods-MacSymbolicatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacSymbolicatorTests.release.xcconfig"; path = "Target Support Files/Pods-MacSymbolicatorTests/Pods-MacSymbolicatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		0B834E4559BE202AB3A47BC5 /* Pods-MacSymbolicatorCLI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacSymbolicatorCLI.release.xcconfig"; path = "Target Support Files/Pods-MacSymbolicatorCLI/Pods-MacSymbolicatorCLI.release.xcconfig"; sourceTree = "<group>"; };
+		1DDFEF65C22ACE80CEBFF739 /* Pods-MacSymbolicator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacSymbolicator.release.xcconfig"; path = "Target Support Files/Pods-MacSymbolicator/Pods-MacSymbolicator.release.xcconfig"; sourceTree = "<group>"; };
+		438B9B446E0375A0D4C619F7 /* Pods-MacSymbolicatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacSymbolicatorTests.debug.xcconfig"; path = "Target Support Files/Pods-MacSymbolicatorTests/Pods-MacSymbolicatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		61181E3C145A5C291C79EEF3 /* Pods_MacSymbolicatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacSymbolicatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		637B49F34632F60135C59211 /* Pods-MacSymbolicatorCLI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacSymbolicatorCLI.debug.xcconfig"; path = "Target Support Files/Pods-MacSymbolicatorCLI/Pods-MacSymbolicatorCLI.debug.xcconfig"; sourceTree = "<group>"; };
+		A84563F4C659737DC3F3CA4C /* Pods-MacSymbolicator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacSymbolicator.debug.xcconfig"; path = "Target Support Files/Pods-MacSymbolicator/Pods-MacSymbolicator.debug.xcconfig"; sourceTree = "<group>"; };
 		B200A3AB1EF23244006CD542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2036AD028DDDFBB00ED1268 /* ReportFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportFileTests.swift; sourceTree = "<group>"; };
 		B2036AD228DDE4A500ED1268 /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
@@ -145,6 +155,8 @@
 		B2C2292B1EF223C50015AB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2C2292C1EF223C50015AB33 /* MacSymbolicator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacSymbolicator.entitlements; sourceTree = "<group>"; };
 		B2EC0F4026450D0B00E5473C /* DSYMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSYMTests.swift; sourceTree = "<group>"; };
+		D3B8C59987DE3010EED7A0A6 /* Pods_MacSymbolicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacSymbolicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D24CB3B6E2C454995407E5 /* Pods_MacSymbolicatorCLI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacSymbolicatorCLI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8517C966B86624F81D69640D /* Pods_MacSymbolicatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B21EFA67289A98AF00CA69B1 /* ArgumentParser in Frameworks */,
+				4DF9D674489D89227C5AB046 /* Pods_MacSymbolicatorCLI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,12 +181,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6887232C842EA137ACFE671D /* Pods_MacSymbolicator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4BA098451102F24024283CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A84563F4C659737DC3F3CA4C /* Pods-MacSymbolicator.debug.xcconfig */,
+				1DDFEF65C22ACE80CEBFF739 /* Pods-MacSymbolicator.release.xcconfig */,
+				637B49F34632F60135C59211 /* Pods-MacSymbolicatorCLI.debug.xcconfig */,
+				0B834E4559BE202AB3A47BC5 /* Pods-MacSymbolicatorCLI.release.xcconfig */,
+				438B9B446E0375A0D4C619F7 /* Pods-MacSymbolicatorTests.debug.xcconfig */,
+				068754886D84578B36D0A0D3 /* Pods-MacSymbolicatorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B2036AE828DDE7FA00ED1268 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +261,9 @@
 		B2B74D851EF775F0000BBFD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3B8C59987DE3010EED7A0A6 /* Pods_MacSymbolicator.framework */,
+				F0D24CB3B6E2C454995407E5 /* Pods_MacSymbolicatorCLI.framework */,
+				61181E3C145A5C291C79EEF3 /* Pods_MacSymbolicatorTests.framework */,
 			);
 			name = Frameworks;
 			path = MacSymbolicator;
@@ -295,6 +326,7 @@
 				B2B74D851EF775F0000BBFD6 /* Frameworks */,
 				B27931321EF2872700DDAA7D /* Resources */,
 				B2C229201EF223C50015AB33 /* Products */,
+				A4BA098451102F24024283CC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -327,6 +359,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B212511320CD123900F36050 /* Build configuration list for PBXNativeTarget "MacSymbolicatorTests" */;
 			buildPhases = (
+				8DF3BA1191ADD3F8E55C95D8 /* [CP] Check Pods Manifest.lock */,
 				B212510820CD123800F36050 /* Sources */,
 				B212510920CD123800F36050 /* Frameworks */,
 				B212510A20CD123800F36050 /* Resources */,
@@ -345,6 +378,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B21EFA5B289A981400CA69B1 /* Build configuration list for PBXNativeTarget "MacSymbolicatorCLI" */;
 			buildPhases = (
+				AF0F95D9C7DD504DE6146246 /* [CP] Check Pods Manifest.lock */,
 				B21EFA51289A981400CA69B1 /* Sources */,
 				B21EFA52289A981400CA69B1 /* Frameworks */,
 				B21EFA53289A981400CA69B1 /* CopyFiles */,
@@ -365,11 +399,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2C2292F1EF223C50015AB33 /* Build configuration list for PBXNativeTarget "MacSymbolicator" */;
 			buildPhases = (
+				C97DA6CD4304B782401C318D /* [CP] Check Pods Manifest.lock */,
 				B2C2291B1EF223C50015AB33 /* Sources */,
 				B23E161420CD07FB0020DD37 /* SwiftLint */,
 				B2C2291C1EF223C50015AB33 /* Frameworks */,
 				B2C2291D1EF223C50015AB33 /* Resources */,
 				B2C2ED8B289ABFFF00B7FA40 /* CopyFiles */,
+				2C565B444002A21427147C41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -455,6 +491,68 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C565B444002A21427147C41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MacSymbolicator/Pods-MacSymbolicator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KSCrash-macOS10.14/KSCrash.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSCrash.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MacSymbolicator/Pods-MacSymbolicator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DF3BA1191ADD3F8E55C95D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacSymbolicatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF0F95D9C7DD504DE6146246 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacSymbolicatorCLI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B23E161420CD07FB0020DD37 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -473,6 +571,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		C97DA6CD4304B782401C318D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacSymbolicator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -570,6 +690,7 @@
 /* Begin XCBuildConfiguration section */
 		B212511420CD123900F36050 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438B9B446E0375A0D4C619F7 /* Pods-MacSymbolicatorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -596,6 +717,7 @@
 		};
 		B212511520CD123900F36050 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 068754886D84578B36D0A0D3 /* Pods-MacSymbolicatorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -621,6 +743,7 @@
 		};
 		B21EFA59289A981400CA69B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 637B49F34632F60135C59211 /* Pods-MacSymbolicatorCLI.debug.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -628,7 +751,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = PP5UYHJQCD;
+				DEVELOPMENT_TEAM = 9J89TMF578;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -641,6 +764,7 @@
 		};
 		B21EFA5A289A981400CA69B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B834E4559BE202AB3A47BC5 /* Pods-MacSymbolicatorCLI.release.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -648,7 +772,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = PP5UYHJQCD;
+				DEVELOPMENT_TEAM = 9J89TMF578;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MTL_FAST_MATH = YES;
@@ -773,6 +897,7 @@
 		};
 		B2C229301EF223C50015AB33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A84563F4C659737DC3F3CA4C /* Pods-MacSymbolicator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Resources/MacSymbolicator.entitlements;
@@ -782,7 +907,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = PP5UYHJQCD;
+				DEVELOPMENT_TEAM = 9J89TMF578;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -790,7 +915,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 2.6;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.mahdi.MacSymbolicator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vs.sub.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -799,6 +924,7 @@
 		};
 		B2C229311EF223C50015AB33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DDFEF65C22ACE80CEBFF739 /* Pods-MacSymbolicator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Resources/MacSymbolicator.entitlements;
@@ -808,7 +934,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = PP5UYHJQCD;
+				DEVELOPMENT_TEAM = 9J89TMF578;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -816,7 +942,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 2.6;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.mahdi.MacSymbolicator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vs.sub.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import KSCrash
 
 public class ReportFile {
     enum InitializationError: Error {
@@ -17,9 +18,7 @@ public class ReportFile {
     let filename: String
     let processes: [ReportProcess]
 
-    lazy var uuidsForSymbolication: [BinaryUUID] = {
-        processes.flatMap { $0.uuidsForSymbolication }
-    }()
+    lazy var uuidsForSymbolication: [BinaryUUID] = processes.flatMap { $0.uuidsForSymbolication }
 
     let content: String
     var symbolicatedContent: String?
@@ -36,9 +35,9 @@ public class ReportFile {
 
     public init(path: URL) throws {
         let originalContent: String
-
         do {
-            originalContent = try String(contentsOf: path, encoding: .utf8)
+            originalContent = try convertKSCrashJsonToCrashFormatContent(path: path)
+//            originalContent = try String(contentsOf: path, encoding: .utf8)
         } catch {
             throw InitializationError.readingFile(error)
         }
@@ -49,13 +48,13 @@ public class ReportFile {
 
         var processes = ReportProcess.find(in: originalContent)
 
-        if processes.isEmpty && originalContent.hasPrefix("{") {
+        if processes.isEmpty, originalContent.hasPrefix("{") {
             // Could not find any processes defined in the report file -> Probably not the usual crash report format
             // However, the contents might be JSON -> It might be the new .ips format
             // Attempt translation to the old crash format
 
             do {
-                content = try Translator.translatedCrash(forIPSAt: path)
+                self.content = try Translator.translatedCrash(forIPSAt: path)
             } catch {
                 if let translationError = error as? Translator.Error {
                     throw InitializationError.translation(translationError)
@@ -73,4 +72,27 @@ public class ReportFile {
         self.filename = path.lastPathComponent
         self.processes = processes
     }
+}
+
+func convertKSCrashJsonToCrashFormatContent(path: URL) throws -> String {
+    guard path.pathExtension == "json" else {
+        return try String(contentsOf: path, encoding: .utf8)
+    }
+    let jsonData = try Data(contentsOf: path)
+    let json = try JSONSerialization.jsonObject(with: jsonData)
+    let filter = KSCrashReportFilterAppleFmt(reportStyle: .symbolicatedSideBySide)
+    let group = DispatchGroup()
+    group.enter()
+    var content: String?
+    filter?.filterReports([json], onCompletion: { reports, completed, error in
+        if completed, error == nil {
+            content = reports?.first as? String
+        } else {
+            content = try? String(contentsOf: path, encoding: .utf8)
+        }
+        group.leave()
+    })
+    group.wait()
+    guard let content = content else { throw ReportFile.InitializationError.emptyFile }
+    return content
 }

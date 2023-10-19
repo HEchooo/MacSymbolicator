@@ -3,8 +3,8 @@
 //  MacSymbolicatorCLI
 //
 
-import Foundation
 import ArgumentParser
+import Foundation
 
 @main
 struct MacSymbolicatorCLI: ParsableCommand {
@@ -21,7 +21,7 @@ struct MacSymbolicatorCLI: ParsableCommand {
     @Option(name: .shortAndLong, help: "The output file to save the result to, instead of printing to stdout")
     var output: String?
 
-    @Argument(help: "The report file: .crash/.ips for crash reports .txt for samples/spindumps")
+    @Argument(help: "The report file: .crash/.ips/.json for crash reports .txt for samples/spindumps")
     var reportFilePath: String
 
     @Argument(help: "The dSYMs to use for symbolication")
@@ -30,7 +30,7 @@ struct MacSymbolicatorCLI: ParsableCommand {
     mutating func run() throws {
         if !translateOnly, dsymPath.isEmpty {
             MacSymbolicatorCLI.exit(
-                withError: ArgumentParser.ValidationError.init("Missing expected argument '<dsym-path>'")
+                withError: ArgumentParser.ValidationError("Missing expected argument '<dsym-path>'")
             )
         }
 
